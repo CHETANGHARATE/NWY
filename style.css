@@ -402,6 +402,8 @@ body.dark-mode .theme-switch .moon-icon { display: none; }
     gap: 4rem;
     align-items: center;
     padding: 0 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-content {
@@ -2195,5 +2197,205 @@ canvas {
 
     .wizard-grid-2 {
         grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================================
+   MOBILE OVERFLOW & RESPONSIVENESS FIX
+   Fixes: white space on right, sections getting cut
+   ===================================================== */
+
+/* Global overflow prevention */
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Ensure all sections never exceed viewport */
+section, header, footer, .header-wrapper {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Container must not overflow on small screens */
+.container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    :root {
+        --section-padding: 4rem 0rem;
+    }
+
+    /* Hero fixes */
+    .hero {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+        overflow: hidden;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 1.9rem;
+    }
+
+    .hero-sub {
+        font-size: 1rem;
+    }
+
+    .hero-ctas {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-ctas .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Dashboard card inside hero */
+    .hero-dashboard-card {
+        padding: 1.25rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero-dash-metrics {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    /* All sections padding fix */
+    .trust-section,
+    .journey-section,
+    .live-visual-section,
+    .goal-planner-section,
+    .services-section,
+    .work-section,
+    .why-section,
+    .calculator-section,
+    .stories-section,
+    .booking-section,
+    .faq-section,
+    footer {
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
+    }
+
+    /* Typography scale down */
+    .section-title {
+        font-size: clamp(1.6rem, 6vw, 2rem);
+    }
+
+    .section-desc {
+        font-size: 0.95rem;
+    }
+
+    /* Ticker bar overflow fix */
+    .ticker-bar {
+        overflow: hidden;
+        max-width: 100vw;
+    }
+
+    /* Nav toggle area */
+    .header .container {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+
+    /* Journey navigation – keep scrollable but contained */
+    .journey-navigation-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        max-width: 100%;
+    }
+
+    /* Comparison grid */
+    .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .compare-card {
+        padding: 2rem 1.25rem;
+    }
+
+    /* Services & insights grids */
+    .services-grid,
+    .insights-grid,
+    .stories-grid,
+    .live-visual-grid,
+    .goal-stages-timeline,
+    .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    /* Booking form */
+    .booking-wrapper {
+        padding: 2rem 1rem;
+    }
+
+    /* FAQ */
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    /* Calculator */
+    .calc-layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calc-display-panel,
+    .calc-output-block {
+        padding: 1.25rem;
+    }
+
+    /* WhatsApp widget and sticky bar safe zones */
+    .whatsapp-widget {
+        bottom: 5.5rem;
+        right: 1rem;
+    }
+
+    /* Prevent any image or canvas from blowing out */
+    img, canvas, svg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Charts */
+    .hero-chart-container,
+    .calc-chart-box,
+    .journey-chart-box {
+        max-width: 100% !important;
+        overflow: hidden;
     }
 }
