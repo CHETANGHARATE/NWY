@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimization -->
+    <title>NWY Wealth | Premium Fintech Wealth Management & Fiduciary Planning</title>
+    <meta name="description" content="NWY is a modern, data-driven Indian wealth management platform. We provide fiduciary, commission-free personal advisory, retirement planners, SIP goal calculators, and tax optimization solutions.">
+    <meta name="keywords" content="Wealth Management India, Fiduciary Advisor India, Direct Mutual Funds India, SIP Calculator, Tax Saving Calculator, Retirement Planner India, SEBI Registered, Groww, INDmoney, Smallcase">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nwywealth.com/">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js for premium financial graphics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- --- SCROLL PROGRESS INDICATOR BAR --- -->
+    <div id="scrollProgress"></div>
+
+    <!-- --- HEADER & LIVE TICKER WRAPPER --- -->
+    <div class="header-wrapper">
+        <!-- Live Market Ticker -->
+        <div class="ticker-bar">
+            <div class="ticker-track">
+                <div class="ticker-item">NIFTY 50: <span class="ticker-val">22,820.50</span> <span class="ticker-up">▲ +0.65%</span></div>
+                <div class="ticker-item">SENSEX: <span class="ticker-val">75,080.20</span> <span class="ticker-up">▲ +0.58%</span></div>
+                <div class="ticker-item">NIFTY NEXT 50: <span class="ticker-val">62,450.40</span> <span class="ticker-up">▲ +1.10%</span></div>
+                <div class="ticker-item">GOLD (INR/10g): <span class="ticker-val">72,400.00</span> <span class="ticker-down">▼ -0.15%</span></div>
+                <!-- Duplicate for loop -->
+                <div class="ticker-item">NIFTY 50: <span class="ticker-val">22,820.50</span> <span class="ticker-up">▲ +0.65%</span></div>
+                <div class="ticker-item">SENSEX: <span class="ticker-val">75,080.20</span> <span class="ticker-up">▲ +0.58%</span></div>
+                <div class="ticker-item">NIFTY NEXT 50: <span class="ticker-val">62,450.40</span> <span class="ticker-up">▲ +1.10%</span></div>
+                <div class="ticker-item">GOLD (INR/10g): <span class="ticker-val">72,400.00</span> <span class="ticker-down">▼ -0.15%</span></div>
+            </div>
+        </div>
+
+        <!-- Sticky Header Navigation -->
+        <header class="header" id="header">
+            <div class="container">
+                <a href="#" class="logo">
+                    <div class="logo-symbol">N</div>
+                    <span class="logo-text">NWY</span>
+                </a>
+
+                <nav>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#about" class="nav-link">Why NWY</a></li>
+                        <li><a href="#journey" class="nav-link">Wealth Journey</a></li>
+                        <li><a href="#goalplanner" class="nav-link">Goal Planner</a></li>
+                        <li><a href="#calculators" class="nav-link">Calculators</a></li>
+                        <li><a href="#insights" class="nav-link">Insights Hub</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <!-- Light/Dark Mode Toggle Switch -->
+                    <button class="theme-switch" id="themeSwitch" aria-label="Toggle Theme Mode">
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    </button>
+                    
+                    <a href="#booking" class="btn btn-primary" style="padding: 0.55rem 1.25rem; font-size: 0.85rem;">
+                        Book Consultation
+                    </a>
+                </div>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <!-- --- HERO SECTION --- -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="section-tag">Indian Fiduciary Platform</span>
+                    <h1 class="hero-title">
+                        Protect Wealth. <br>
+                        <span>Grow Smarter.</span>
+                        <span class="text-blue">Leave A Legacy.</span>
+                    </h1>
+                    <p class="hero-sub">
+                        Personalized wealth management and comprehensive financial planning engineered for ambitious Indian families. Zero commissions, zero spams, 100% clarity.
+                    </p>
+                    <div class="hero-ctas-wrapper">
+                        <div class="hero-ctas">
+                            <a href="#booking" class="btn btn-primary">Book Consultation</a>
+                            <a href="https://wa.me/919876543210" target="_blank" class="btn btn-secondary">Talk To An Advisor</a>
+                        </div>
+                        <div class="hero-guarantee">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            <span>100% Free Consultation. No pushy sales calls.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Wealth Dashboard -->
+                <div class="hero-visual">
+                    <div class="hero-dashboard-card">
+                        <div class="hero-dash-header">
+                            <div class="hero-dash-profile">
+                                <div class="hero-dash-avatar"></div>
+                                <div>
+                                    <div class="hero-dash-name">Aditya Sen</div>
+                                    <div style="font-size: 0.7rem; color: var(--color-text-muted);">Fiduciary Advisory Active</div>
+                                </div>
+                            </div>
+                            <div class="hero-dash-status">Growth Balanced</div>
+                        </div>
+
+                        <div class="hero-dash-metrics">
+                            <div class="hero-metric-card">
+                                <div class="hero-metric-label">Estimated Net Worth</div>
+                                <div class="hero-metric-val" id="heroNetWorth">₹1,50,00,000</div>
+                            </div>
+                            <div class="hero-metric-card">
+                                <div class="hero-metric-label">YTD Direct Tax Saved</div>
+                                <div class="hero-metric-val" id="heroTaxSaved" style="color: var(--color-success);">₹3,45,200</div>
+                            </div>
+                        </div>
+
+                        <div class="hero-chart-container">
+                            <canvas id="heroChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- TRUST STATISTICS --- -->
+    <section class="trust-sec" id="about">
+        <div class="container">
+            <div class="trust-header">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-title">Trusted Guidance For Every Milestone</h2>
+                <p class="section-desc" style="margin: 0 auto;">We operate as fee-only fiduciaries. Your long-term legacy is our single metric of success.</p>
+            </div>
+
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <span class="trust-num" data-target="5000">0</span>
+                    <span class="trust-label">Families Guided</span>
+                </div>
+                <div class="trust-card">
+                    <span class="trust-num" data-target="12000">0</span>
+                    <span class="trust-label">Plans Created</span>
+                </div>
+                <div class="trust-card">
+                    <span class="trust-num" data-target="15">0</span>
+                    <span class="trust-label">Years Experience</span>
+                </div>
+                <div class="trust-card">
+                    <span class="trust-num" data-target="98">0</span>
+                    <span class="trust-label">Client Retention %</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- INTERACTIVE WEALTH JOURNEY --- -->
+    <section class="journey-sec" id="journey">
+        <div class="container">
+            <div class="journey-header">
+                <span class="section-tag">Compounding Roadmap</span>
+                <h2 class="section-title">The Generational Wealth Journey</h2>
+                <p class="section-desc" style="margin: 0 auto 3rem auto;">Select a stage to explore our tax overlays, investment direct-plans, and legacy protections.</p>
+            </div>
+
+            <div class="journey-navigation-wrapper">
+                <ul class="journey-navigation">
+                    <li class="journey-nav-item"><button class="journey-nav-btn active" onclick="setJourneyStep(0)">1. Salary Optimization</button></li>
+                    <li class="journey-nav-item"><button class="journey-nav-btn" onclick="setJourneyStep(1)">2. Savings Surplus</button></li>
+                    <li class="journey-nav-item"><button class="journey-nav-btn" onclick="setJourneyStep(2)">3. Direct Investments</button></li>
+                    <li class="journey-nav-item"><button class="journey-nav-btn" onclick="setJourneyStep(3)">4. Tax Harvesting</button></li>
+                    <li class="journey-nav-item"><button class="journey-nav-btn" onclick="setJourneyStep(4)">5. Wealth Creation</button></li>
+                    <li class="journey-nav-item"><button class="journey-nav-btn" onclick="setJourneyStep(5)">6. Retirement SWR</button></li>
+                    <li class="journey-nav-item"><button class="journey-nav-btn" onclick="setJourneyStep(6)">7. Generational Legacy</button></li>
+                </ul>
+            </div>
+
+            <div class="journey-display-panel">
+                <div class="journey-panel-content">
+                    <h3 class="journey-panel-title" id="journeyTitle">1. Salary Optimization</h3>
+                    <p class="journey-panel-desc" id="journeyDesc">
+                        We review salary structures, optimizing Section 80C, HRA, and corporate perks to shield professional cash flow from tax leaks before capital deployment.
+                    </p>
+                    <span class="journey-panel-badge" id="journeyBadge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span id="journeyBadgeText">Tax Shield Active</span>
+                    </span>
+                </div>
+
+                <div class="journey-chart-box">
+                    <canvas id="journeyChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- LIVE FINANCIAL VISUALIZATION CARDS --- -->
+    <section class="live-visual-sec">
+        <div class="container">
+            <div class="live-visual-header">
+                <span class="section-tag">Interactive Ratios</span>
+                <h2 class="section-title">Live Financial Projections</h2>
+                <p class="section-desc" style="margin: 0 auto;">Subtle financial indicators demonstrating how systematic adjustments compound capital yields.</p>
+            </div>
+
+            <div class="live-visual-grid">
+                <div class="live-visual-card">
+                    <div class="live-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="16" y1="2" x2="16" y2="4"></line><line x1="8" y1="2" x2="8" y2="4"></line></svg>
+                    </div>
+                    <span class="live-card-num" id="visTax">₹1.8L</span>
+                    <span class="live-card-label">Potential Tax Saved/Yr</span>
+                </div>
+
+                <div class="live-visual-card">
+                    <div class="live-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                    </div>
+                    <span class="live-card-num" id="visRetire">₹4.2Cr</span>
+                    <span class="live-card-label">Retirement Nest Egg</span>
+                </div>
+
+                <div class="live-visual-card">
+                    <div class="live-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </div>
+                    <span class="live-card-num" id="visGrowth">12.4%</span>
+                    <span class="live-card-label">Compounding Rate</span>
+                </div>
+
+                <div class="live-visual-card">
+                    <div class="live-card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <span class="live-card-num" id="visRisk">Balanced</span>
+                    <span class="live-card-label">Risk Threshold</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- INTERACTIVE GOAL PLANNER --- -->
+    <section class="goal-planner-sec" id="goalplanner">
+        <div class="container">
+            <div class="goal-planner-header">
+                <span class="section-tag">Dynamic Planning</span>
+                <h2 class="section-title">Select Your Core Objective</h2>
+                <p class="section-desc" style="margin: 0 auto;">Select an investment goal to view our structured fiduciary capital allocation roadmap.</p>
+            </div>
+
+            <div class="goal-selectors-row">
+                <button class="goal-selector-btn active" onclick="selectGoal('house')">🏡 Buy A House</button>
+                <button class="goal-selector-btn" onclick="selectGoal('child')">🎓 Child's Education</button>
+                <button class="goal-selector-btn" onclick="selectGoal('retire')">🌅 Retirement Security</button>
+                <button class="goal-selector-btn" onclick="selectGoal('wealth')">📈 Wealth Creation</button>
+                <button class="goal-selector-btn" onclick="selectGoal('business')">💼 Business Exit/Expansion</button>
+            </div>
+
+            <div class="goal-roadmap-display">
+                <h3 class="goal-roadmap-title" id="goalRoadmapTitle">Milestones for: Buy A House</h3>
+                
+                <div class="goal-stages-timeline">
+                    <!-- Stage 1 -->
+                    <div class="goal-stage-card">
+                        <span class="goal-stage-num">Phase 1</span>
+                        <h4 class="goal-stage-title" id="goalStage1Title">Capital Aggregation</h4>
+                        <p class="goal-stage-desc" id="goalStage1Desc">Direct low-cost arbitrage and liquid debt fund setups to safely compound down-payments over 3 years.</p>
+                    </div>
+                    <!-- Stage 2 -->
+                    <div class="goal-stage-card">
+                        <span class="goal-stage-num">Phase 2</span>
+                        <h4 class="goal-stage-title" id="goalStage2Title">Tax Protection</h4>
+                        <p class="goal-stage-desc" id="goalStage2Desc">Systematic harvesting of Section 54 benefits when deploying capital gains for property purchases.</p>
+                    </div>
+                    <!-- Stage 3 -->
+                    <div class="goal-stage-card">
+                        <span class="goal-stage-num">Phase 3</span>
+                        <h4 class="goal-stage-title" id="goalStage3Title">Asset Allocation</h4>
+                        <p class="goal-stage-desc" id="goalStage3Desc">Balancing real estate weights with liquid equities to prevent asset concentration shocks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- SERVICES GRID --- -->
+    <section class="services-sec" id="services">
+        <div class="container">
+            <div class="services-header">
+                <span class="section-tag">Our Offerings</span>
+                <h2 class="section-title">Everything Your Financial Legacy Requires</h2>
+                <p class="section-desc" style="margin: 0 auto;">Seamless advisory services constructed completely around you. Flat-fee standards, no hidden charges.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Wealth Management -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        </div>
+                        <h3 class="service-title">Private Wealth Management</h3>
+                        <p class="service-desc">Tailored portfolio construction incorporating direct-plan mutual funds, SGBs, fixed income, and select global assets.</p>
+                    </div>
+                    <a href="#calculators" class="btn-link" onclick="switchCalcTab('sip')">
+                        SIP Calculator
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+
+                <!-- Investment Planning -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <h3 class="service-title">Goal-Based Investment</h3>
+                        <p class="service-desc">Matching asset lock-ins with future cash flow objectives like college milestones, corporate liquidity, and real estates.</p>
+                    </div>
+                    <a href="#calculators" class="btn-link" onclick="switchCalcTab('goal')">
+                        Goal Calculator
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+
+                <!-- Tax Optimization -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="16" y1="2" x2="16" y2="4"></line><line x1="8" y1="2" x2="8" y2="4"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        </div>
+                        <h3 class="service-title">Tax Structuring</h3>
+                        <p class="service-desc">Leveraging Section 112A capital gains harvesting, corporate cash structuring, and NRI FEMA compliance status.</p>
+                    </div>
+                    <a href="#calculators" class="btn-link" onclick="switchCalcTab('tax')">
+                        Tax Calculator
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+
+                <!-- Retirement Planning -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                        </div>
+                        <h3 class="service-title">Retirement Cash-Flows</h3>
+                        <p class="service-desc">Inflation-protected safe withdrawal plans built specifically for early retirements or business transitions in India.</p>
+                    </div>
+                    <a href="#calculators" class="btn-link" onclick="switchCalcTab('retire')">
+                        Retirement Planner
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+
+                <!-- Estate Planning -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                        </div>
+                        <h3 class="service-title">Estate & Family Trusts</h3>
+                        <p class="service-desc">Drafting of private family trusts, wills execution, and succession frameworks to prevent estate inheritance disputes.</p>
+                    </div>
+                    <a href="#booking" class="btn-link">
+                        Book Consultation
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+
+                <!-- Business Advisory -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        </div>
+                        <h3 class="service-title">Business exit & treasury</h3>
+                        <p class="service-desc">Succession options, working capital management, tax shelters, and exit strategies for Indian entrepreneurs.</p>
+                    </div>
+                    <a href="#booking" class="btn-link">
+                        Book Consultation
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- HOW NWY WORKS (EXPANDABLE STEPS) --- -->
+    <section class="work-sec" id="process">
+        <div class="container">
+            <div class="work-header">
+                <span class="section-tag">Process</span>
+                <h2 class="section-title">A Simple Process Designed Around You</h2>
+                <p class="section-desc" style="margin: 0 auto 4rem auto;">Click steps to explore our onboarding process. No complex documentation, just absolute clarity.</p>
+            </div>
+
+            <div class="timeline-accordion">
+                <!-- Step 1 -->
+                <div class="timeline-step-item active" onclick="toggleStep(0)">
+                    <button class="timeline-step-header">
+                        <div class="timeline-step-title-box">
+                            <div class="timeline-step-badge">1</div>
+                            <span class="timeline-step-title">Discovery</span>
+                        </div>
+                        <span class="timeline-step-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                    </button>
+                    <div class="timeline-step-panel" style="max-height: 200px;">
+                        <div class="timeline-step-content">
+                            We map out your current investments, tax brackets, and liabilities. We audit existing insurance policies and mutual fund direct vs regular expense ratios.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-step-item" onclick="toggleStep(1)">
+                    <button class="timeline-step-header">
+                        <div class="timeline-step-title-box">
+                            <div class="timeline-step-badge">2</div>
+                            <span class="timeline-step-title">Strategy Development</span>
+                        </div>
+                        <span class="timeline-step-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                    </button>
+                    <div class="timeline-step-panel">
+                        <div class="timeline-step-content">
+                            Our team structures customized asset allocation maps, tax overlays, and estate trusts with zero commissions or product placement bias.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-step-item" onclick="toggleStep(2)">
+                    <button class="timeline-step-header">
+                        <div class="timeline-step-title-box">
+                            <div class="timeline-step-badge">3</div>
+                            <span class="timeline-step-title">Execution</span>
+                        </div>
+                        <span class="timeline-step-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                    </button>
+                    <div class="timeline-step-panel">
+                        <div class="timeline-step-content">
+                            We execute the transition out of high-cost regular plans into low-cost direct options. We coordinate trust setups and insurance adjustments.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-step-item" onclick="toggleStep(3)">
+                    <button class="timeline-step-header">
+                        <div class="timeline-step-title-box">
+                            <div class="timeline-step-badge">4</div>
+                            <span class="timeline-step-title">Continuous Optimization</span>
+                        </div>
+                        <span class="timeline-step-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+                    </button>
+                    <div class="timeline-step-panel">
+                        <div class="timeline-step-content">
+                            Continuous monitoring of tax codes, portfolio distributions, and quarterly rebalancing ensures your compounding stays protected.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- WHY NWY COMPARISON --- -->
+    <section class="why-sec">
+        <div class="container">
+            <div class="why-header">
+                <span class="section-tag">Comparison</span>
+                <h2 class="section-title">Distributor vs. Fiduciary Advisor</h2>
+                <p class="section-desc" style="margin: 0 auto 4rem auto;">See how NWY's fee-only planning differs from standard commission-based mutual fund sellers.</p>
+            </div>
+
+            <div class="comparison-grid">
+                <!-- Distributors -->
+                <div class="compare-card">
+                    <h3 class="compare-title">Traditional Brokers</h3>
+                    <div class="compare-list">
+                        <div class="compare-item">
+                            <span class="compare-icon-box" style="color: #EF4444;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+                            <div>
+                                <h4 class="compare-item-title">Commission-Driven</h4>
+                                <p class="compare-item-desc">Advisors pocket kickbacks from regular funds or ULIPs, biasing recommendations.</p>
+                            </div>
+                        </div>
+                        <div class="compare-item">
+                            <span class="compare-icon-box" style="color: #EF4444;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+                            <div>
+                                <h4 class="compare-item-title">Product Focus</h4>
+                                <p class="compare-item-desc">Goal is selling products rather than integrated tax planning or estate advisory.</p>
+                            </div>
+                        </div>
+                        <div class="compare-item">
+                            <span class="compare-icon-box" style="color: #EF4444;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+                            <div>
+                                <h4 class="compare-item-title">Regular Spam</h4>
+                                <p class="compare-item-desc">Frequent unsolicited calls pushing new NFOs or insurance schemes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NWY -->
+                <div class="compare-card nwy-premium">
+                    <h3 class="compare-title" style="color: var(--color-blue-primary);">NWY Advisory</h3>
+                    <div class="compare-list">
+                        <div class="compare-item">
+                            <span class="compare-icon-box" style="color: var(--color-success);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                            <div>
+                                <h4 class="compare-item-title">Flat-Fee Only</h4>
+                                <p class="compare-item-desc">Transparent billing. We accept no commissions, aligning our incentives with you.</p>
+                            </div>
+                        </div>
+                        <div class="compare-item">
+                            <span class="compare-icon-box" style="color: var(--color-success);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                            <div>
+                                <h4 class="compare-item-title">Holistic CFO Care</h4>
+                                <p class="compare-item-desc">All-inclusive planning linking direct investing, taxes, and legal estate will setups.</p>
+                            </div>
+                        </div>
+                        <div class="compare-item">
+                            <span class="compare-icon-box" style="color: var(--color-success);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                            <div>
+                                <h4 class="compare-item-title">Zero Spam Guarantee</h4>
+                                <p class="compare-item-desc">We never call you unless requested. Scheduled consultations only.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- WEALTH CALCULATORS HUB --- -->
+    <section class="calc-sec" id="calculators">
+        <div class="container">
+            <div class="calc-header">
+                <span class="section-tag">Data Engines</span>
+                <h2 class="section-title">Wealth Intelligence Hub</h2>
+                <p class="section-desc" style="margin: 0 auto 3rem auto;">Test scenarios, compound returns, and calculate target reserves in real time.</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="calc-tabs">
+                <button class="calc-tab-btn active" id="tab-sip" onclick="switchCalcTab('sip')">SIP Groww Calculator</button>
+                <button class="calc-tab-btn" id="tab-retire" onclick="switchCalcTab('retire')">Retirement Planner</button>
+                <button class="calc-tab-btn" id="tab-goal" onclick="switchCalcTab('goal')">Goal Planner</button>
+                <button class="calc-tab-btn" id="tab-tax" onclick="switchCalcTab('tax')">Tax Savings Optimizer</button>
+                <button class="calc-tab-btn" id="tab-emergency" onclick="switchCalcTab('emergency')">Emergency Fund</button>
+            </div>
+
+            <!-- Panel 1: SIP groww -->
+            <div class="calc-display-panel active" id="panel-sip">
+                <div class="calc-layout-grid">
+                    <div class="calc-input-block">
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Monthly SIP Investment</span>
+                                <span class="calc-input-value" id="sipValDisplay">₹25,000</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="sipSlider" min="2000" max="250000" step="2000" value="25000" oninput="calculateSip()">
+                        </div>
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Investment Duration (Years)</span>
+                                <span class="calc-input-value" id="sipYearsDisplay">15 Years</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="sipYearsSlider" min="2" max="30" step="1" value="15" oninput="calculateSip()">
+                        </div>
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Expected Return Rate (% p.a.)</span>
+                                <span class="calc-input-value" id="sipRateDisplay">12.0%</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="sipRateSlider" min="5" max="18" step="0.5" value="12" oninput="calculateSip()">
+                        </div>
+                    </div>
+
+                    <div class="calc-output-block">
+                        <div class="calc-metrics-row">
+                            <div class="calc-output-card wide-metric">
+                                <div class="calc-out-label">Projected Future Wealth</div>
+                                <div class="calc-out-val" id="sipTotalVal">₹1,26,14,350</div>
+                            </div>
+                            <div class="calc-output-card">
+                                <div class="calc-out-label">Principal Invested</div>
+                                <div class="calc-out-val" id="sipInvestedVal">₹45,00,000</div>
+                            </div>
+                            <div class="calc-output-card">
+                                <div class="calc-out-label">Estimated Gains</div>
+                                <div class="calc-out-val" id="sipGainsVal" style="color: var(--color-success);">₹81,14,350</div>
+                            </div>
+                        </div>
+                        <div class="calc-chart-box">
+                            <canvas id="sipChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 2: Retirement -->
+            <div class="calc-display-panel" id="panel-retire">
+                <div class="calc-layout-grid">
+                    <div class="calc-input-block">
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Current Age</span>
+                                <span class="calc-input-value" id="retAgeDisplay">35 Yrs</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="retAgeSlider" min="20" max="55" step="1" value="35" oninput="calculateRetirement()">
+                        </div>
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Target Retirement Age</span>
+                                <span class="calc-input-value" id="retTargetDisplay">55 Yrs</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="retTargetSlider" min="45" max="65" step="1" value="55" oninput="calculateRetirement()">
+                        </div>
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Current Monthly Expense</span>
+                                <span class="calc-input-value" id="retExpenseDisplay">₹1,00,000</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="retExpenseSlider" min="10000" max="300000" step="5000" value="100000" oninput="calculateRetirement()">
+                        </div>
+                    </div>
+
+                    <div class="calc-output-block">
+                        <div class="calc-metrics-row">
+                            <div class="calc-output-card wide-metric">
+                                <div class="calc-out-label">Target Retirement Corpus Required</div>
+                                <div class="calc-out-val" id="retCorpusVal">₹6,80,00,000</div>
+                            </div>
+                            <div class="calc-output-card">
+                                <div class="calc-out-label">Inflation-Adjusted Monthly Expense</div>
+                                <div class="calc-out-val" id="retInfExpenseVal">₹3,20,710</div>
+                            </div>
+                            <div class="calc-output-card">
+                                <div class="calc-out-label">Estimated Monthly SIP Required</div>
+                                <div class="calc-out-val" id="retSipNeededVal" style="color: var(--color-blue-primary);">₹75,400</div>
+                            </div>
+                        </div>
+                        <div class="calc-chart-box">
+                            <canvas id="retirementChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 3: Goal Planner -->
+            <div class="calc-display-panel" id="panel-goal">
+                <div class="calc-layout-grid">
+                    <div class="calc-input-block">
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Target Goal Amount</span>
+                                <span class="calc-input-value" id="goalValDisplay">₹50,00,000</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="goalAmtSlider" min="500000" max="50000000" stroke-width="2" step="500000" value="5000000" oninput="calculateGoal()">
+                        </div>
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Timeline (Years)</span>
+                                <span class="calc-input-value" id="goalYearsDisplay">10 Years</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="goalYearsSlider" min="2" max="25" step="1" value="10" oninput="calculateGoal()">
+                        </div>
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Expected Return Rate (% p.a.)</span>
+                                <span class="calc-input-value" id="goalRateDisplay">12.0%</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="goalRateSlider" min="5" max="18" step="0.5" value="12" oninput="calculateGoal()">
+                        </div>
+                    </div>
+
+                    <div class="calc-output-block">
+                        <div class="calc-metrics-row">
+                            <div class="calc-output-card wide-metric">
+                                <div class="calc-out-label">Required Monthly SIP</div>
+                                <div class="calc-out-val" id="goalSipRequiredVal">₹21,700</div>
+                            </div>
+                            <div class="calc-output-card">
+                                <div class="calc-out-label">Total Principal Invested</div>
+                                <div class="calc-out-val" id="goalInvestedVal">₹26,04,000</div>
+                            </div>
+                            <div class="calc-output-card">
+                                <div class="calc-out-label">Earned Compounded Returns</div>
+                                <div class="calc-out-val" id="goalGainsVal" style="color: var(--color-success);">₹23,96,000</div>
+                            </div>
+                        </div>
+                        <div class="calc-chart-box">
+                            <canvas id="goalChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 4: Tax saving -->
+            <div class="calc-display-panel" id="panel-tax">
+                <div class="calc-layout-grid">
+                    <div class="calc-input-block">
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Annual Income (INR)</span>
+                                <span class="calc-input-value" id="taxIncomeDisplay">₹18,00,000</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="taxIncomeSlider" min="500000" max="5000000" step="50000" value="1800000" oninput="calculateTax()">
+                        </div>
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Section 80C Investments</span>
+                                <span class="calc-input-value" id="tax80cDisplay">₹1,20,000</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="tax80cSlider" min="0" max="150000" step="5000" value="120000" oninput="calculateTax()">
+                        </div>
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Section 80D (Health Insurance)</span>
+                                <span class="calc-input-value" id="tax80dDisplay">₹25,000</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="tax80dSlider" min="0" max="75000" step="5000" value="25000" oninput="calculateTax()">
+                        </div>
+                    </div>
+
+                    <div class="calc-output-block">
+                        <div class="calc-metrics-row">
+                            <div class="calc-output-card wide-metric">
+                                <div class="calc-out-label">Estimated Tax Saved / Yr</div>
+                                <div class="calc-out-val" id="taxSavedVal" style="color: var(--color-success);">₹45,240</div>
+                            </div>
+                            <div class="calc-output-card">
+                                <div class="calc-out-label">Estimated Net Tax Liability</div>
+                                <div class="calc-out-val" id="taxNetLiabilityVal">₹2,84,760</div>
+                            </div>
+                            <div class="calc-output-card">
+                                <div class="calc-out-label">Net Income After Tax</div>
+                                <div class="calc-out-val" id="taxNetIncomeVal">₹15,15,240</div>
+                            </div>
+                        </div>
+                        <div class="calc-chart-box">
+                            <canvas id="taxChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 5: Emergency Fund -->
+            <div class="calc-display-panel" id="panel-emergency">
+                <div class="calc-layout-grid">
+                    <div class="calc-input-block">
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Monthly Essential Expense</span>
+                                <span class="calc-input-value" id="emExpenseDisplay">₹80,000</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="emExpenseSlider" min="10000" max="250000" step="5000" value="80000" oninput="calculateEmergency()">
+                        </div>
+                        <div class="calc-input-group">
+                            <div class="calc-label-row">
+                                <span class="calc-input-label">Emergency Buffer Coverage</span>
+                                <span class="calc-input-value" id="emMonthsDisplay">6 Months</span>
+                            </div>
+                            <input type="range" class="calc-range-slider" id="emMonthsSlider" min="3" max="12" step="3" value="6" oninput="calculateEmergency()">
+                        </div>
+                    </div>
+
+                    <div class="calc-output-block">
+                        <div class="calc-metrics-row">
+                            <div class="calc-output-card wide-metric">
+                                <div class="calc-out-label">Total Emergency Buffer Required</div>
+                                <div class="calc-out-val" id="emTotalVal" style="color: var(--color-blue-primary);">₹4,80,000</div>
+                            </div>
+                            <div class="calc-output-card">
+                                <div class="calc-out-label">Low-Risk Liquid Debt Fund allocation</div>
+                                <div class="calc-out-val" id="emLiquidVal">₹3,36,000</div>
+                            </div>
+                            <div class="calc-output-card">
+                                <div class="calc-out-label">Instant Cash / Bank balance</div>
+                                <div class="calc-out-val" id="emCashVal">₹1,44,000</div>
+                            </div>
+                        </div>
+                        <div class="calc-chart-box">
+                            <canvas id="emergencyChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- CLIENT STORIES (BEFORE / AFTER) --- -->
+    <section class="stories-sec">
+        <div class="container">
+            <div class="stories-header">
+                <span class="section-tag">Case Studies</span>
+                <h2 class="section-title">Client Legacies Secured</h2>
+                <p class="section-desc" style="margin: 0 auto 3rem auto;">Before and After case stories demonstrating how structured fiduciary planning compounds yields.</p>
+            </div>
+
+            <div class="stories-grid">
+                <!-- Card 1 -->
+                <div class="story-card" data-story="1">
+                    <div class="story-user-row">
+                        <div class="story-avatar" style="background: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=facearea&facepad=2&w=128&h=128&q=80') center/cover;"></div>
+                        <div>
+                            <div class="story-name">The Iyer Family</div>
+                            <div class="story-role">NRI Tech Lead • Bengaluru</div>
+                        </div>
+                    </div>
+                    <div class="story-body">
+                        <div class="story-pane challenge-pane active">
+                            <h4 class="story-pane-title">The Challenge</h4>
+                            <p class="story-pane-text">Paying over ₹15L/yr in capital gains taxes due to regular-plan fund fees and duplicate US-India compliance liabilities.</p>
+                        </div>
+                        <div class="story-pane outcome-pane">
+                            <h4 class="story-pane-title">The Outcome</h4>
+                            <p class="story-pane-text">Restructured into direct plans, established NRE arbitrage overlays, saving ₹4.2L in tax drag annually.</p>
+                        </div>
+                    </div>
+                    <div class="story-toggle-row">
+                        <div class="story-toggle-btn">
+                            <button class="story-switch-btn active" onclick="switchStoryPane(1, 'challenge')">Challenge</button>
+                            <button class="story-switch-btn" onclick="switchStoryPane(1, 'outcome')">Outcome</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="story-card" data-story="2">
+                    <div class="story-user-row">
+                        <div class="story-avatar" style="background: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&facepad=2&w=128&h=128&q=80') center/cover;"></div>
+                        <div>
+                            <div class="story-name">Dr. Amit Sen</div>
+                            <div class="story-role">Senior Surgeon • Mumbai</div>
+                        </div>
+                    </div>
+                    <div class="story-body">
+                        <div class="story-pane challenge-pane active">
+                            <h4 class="story-pane-title">The Challenge</h4>
+                            <p class="story-pane-text">Locked into high-commission ULIPs and bank-sold regular schemes, resulting in sub-inflationary growth metrics.</p>
+                        </div>
+                        <div class="story-pane outcome-pane">
+                            <h4 class="story-pane-title">The Outcome</h4>
+                            <p class="story-pane-text">Liquidated ULIPs, structured low-cost index overlays. Safe withdrawal rate set to compound retirement targets.</p>
+                        </div>
+                    </div>
+                    <div class="story-toggle-row">
+                        <div class="story-toggle-btn">
+                            <button class="story-switch-btn active" onclick="switchStoryPane(2, 'challenge')">Challenge</button>
+                            <button class="story-switch-btn" onclick="switchStoryPane(2, 'outcome')">Outcome</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="story-card" data-story="3">
+                    <div class="story-user-row">
+                        <div class="story-avatar" style="background: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=facearea&facepad=2&w=128&h=128&q=80') center/cover;"></div>
+                        <div>
+                            <div class="story-name">Vikram Chawla</div>
+                            <div class="story-role">Founder, Chawla Industries • Delhi</div>
+                        </div>
+                    </div>
+                    <div class="story-body">
+                        <div class="story-pane challenge-pane active">
+                            <h4 class="story-pane-title">The Challenge</h4>
+                            <p class="story-pane-text">Industrial inheritance structures vulnerable to local succession liabilities and division disputes.</p>
+                        </div>
+                        <div class="story-pane outcome-pane">
+                            <h4 class="story-pane-title">The Outcome</h4>
+                            <p class="story-pane-text">Created Private Family Trust, transitioning core shares tax-efficiently without business operation delays.</p>
+                        </div>
+                    </div>
+                    <div class="story-toggle-row">
+                        <div class="story-toggle-btn">
+                            <button class="story-switch-btn active" onclick="switchStoryPane(3, 'challenge')">Challenge</button>
+                            <button class="story-switch-btn" onclick="switchStoryPane(3, 'outcome')">Outcome</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FINANCIAL INSIGHTS HUB --- -->
+    <section class="insights-sec" id="insights">
+        <div class="container">
+            <div class="insights-header-row">
+                <div class="insights-header">
+                    <span class="section-tag">Learning Center</span>
+                    <h2 class="section-title" style="margin-bottom: 0;">Learn Before You Invest</h2>
+                </div>
+
+                <div class="insights-search-wrapper">
+                    <input type="text" class="insights-search-input" id="insightSearch" placeholder="Search guides (e.g. tax, NRI, mutual funds)..." oninput="searchInsights()">
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="insights-filter-tabs">
+                <button class="insights-tab-btn active" onclick="filterInsights('all')">All Guides</button>
+                <button class="insights-tab-btn" onclick="filterInsights('tax')">Tax Optimization</button>
+                <button class="insights-tab-btn" onclick="filterInsights('nri')">NRI Regulations</button>
+                <button class="insights-tab-btn" onclick="filterInsights('retirement')">Retirement SWR</button>
+                <button class="insights-tab-btn" onclick="filterInsights('basics')">Investing Basics</button>
+            </div>
+
+            <div class="insights-grid" id="insightsGrid">
+                <!-- Card 1 -->
+                <div class="insight-card" data-category="tax">
+                    <div class="insight-card-content">
+                        <span class="insight-tag">Tax Optimization</span>
+                        <h3 class="insight-title"><a href="#">Direct vs Regular Mutual Funds: The Cost Drag</a></h3>
+                        <p class="insight-desc">Understanding how commission-based regular mutual funds leak up to 1.5% in compounding returns annually.</p>
+                    </div>
+                    <div class="insight-footer">5 Min Read • June 2026</div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="insight-card" data-category="nri">
+                    <div class="insight-card-content">
+                        <span class="insight-tag">NRI Regulations</span>
+                        <h3 class="insight-title"><a href="#">FEMA Regulations & NRE/NRO Account Setups</a></h3>
+                        <p class="insight-desc">A compliance checklist detailing repatriation rules and double taxation avoidance agreement (DTAA) overlays.</p>
+                    </div>
+                    <div class="insight-footer">8 Min Read • May 2026</div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="insight-card" data-category="retirement">
+                    <div class="insight-card-content">
+                        <span class="insight-tag">Retirement SWR</span>
+                        <h3 class="insight-title"><a href="#">Why the 4% Safe Withdrawal Rate Fails in India</a></h3>
+                        <p class="insight-desc">Understanding inflation adjustments and structuring dynamic asset drawdown models in India's economy.</p>
+                    </div>
+                    <div class="insight-footer">6 Min Read • May 2026</div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="insight-card" data-category="basics">
+                    <div class="insight-card-content">
+                        <span class="insight-tag">Investing Basics</span>
+                        <h3 class="insight-title"><a href="#">Debt Mutual Fund Tax Changes: What to Do Next?</a></h3>
+                        <p class="insight-desc">Analyzing the indexation benefit removals on debt mutual funds and setting alternative debt structures.</p>
+                    </div>
+                    <div class="insight-footer">4 Min Read • April 2026</div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="insight-card" data-category="tax">
+                    <div class="insight-card-content">
+                        <span class="insight-tag">Tax Optimization</span>
+                        <h3 class="insight-title"><a href="#">Harvesting ₹1 Lakh LTCG Tax-Free Every Year</a></h3>
+                        <p class="insight-desc">A step-by-step strategy to harvest equity mutual fund gains under Section 112A of the Income Tax Act.</p>
+                    </div>
+                    <div class="insight-footer">7 Min Read • March 2026</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- MULT-STEP CONSULTATION BOOKING WIZARD --- -->
+    <section class="booking-sec" id="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <!-- Progress bar tracker -->
+                <div class="wizard-progress">
+                    <div class="wizard-progress-bar" id="wizardProgressBar"></div>
+                    <div class="wizard-node active" id="node-1">1</div>
+                    <div class="wizard-node" id="node-2">2</div>
+                    <div class="wizard-node" id="node-3">3</div>
+                    <div class="wizard-node" id="node-4">4</div>
+                </div>
+
+                <form id="onboardingWizard" onsubmit="handleWizardSubmit(event)">
+                    <!-- Step 1: Personal Details -->
+                    <div class="wizard-step-panel active" id="step-panel-1">
+                        <h3 class="wizard-step-title">Let's Secure Your Legacy</h3>
+                        <p class="wizard-step-desc">Enter your basic contact details to begin onboarding.</p>
+                        <div class="wizard-form-fields">
+                            <div class="wizard-input-group">
+                                <label class="wizard-input-label">Full Name</label>
+                                <input type="text" class="wizard-input" id="wizName" placeholder="Rajesh Kumar" required>
+                            </div>
+                            <div class="wizard-grid-2">
+                                <div class="wizard-input-group">
+                                    <label class="wizard-input-label">Email Address</label>
+                                    <input type="email" class="wizard-input" id="wizEmail" placeholder="rajesh@gmail.com" required>
+                                </div>
+                                <div class="wizard-input-group">
+                                    <label class="wizard-input-label">WhatsApp Number</label>
+                                    <input type="tel" class="wizard-input" id="wizPhone" placeholder="+91 98765 43210" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wizard-btn-row">
+                            <div style="flex-grow: 1;"></div>
+                            <button type="button" class="btn btn-primary" onclick="goToWizardStep(2)">Next Step</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Financial Goals & Assets -->
+                    <div class="wizard-step-panel" id="step-panel-2">
+                        <h3 class="wizard-step-title">Your Financial Goals</h3>
+                        <p class="wizard-step-desc">Help us understand your current asset scales and primary requirements.</p>
+                        <div class="wizard-form-fields">
+                            <div class="wizard-grid-2">
+                                <div class="wizard-input-group">
+                                    <label class="wizard-input-label">Indian Residence Status</label>
+                                    <select class="wizard-input" id="wizResidence" required style="color: var(--color-text); background-color: var(--color-input-bg);">
+                                        <option value="Resident Indian" selected>Resident Indian</option>
+                                        <option value="Non-Resident Indian">Non-Resident Indian (NRI)</option>
+                                        <option value="Foreign National">Foreign National</option>
+                                    </select>
+                                </div>
+                                <div class="wizard-input-group">
+                                    <label class="wizard-input-label">Net Worth Bracket (INR)</label>
+                                    <select class="wizard-input" id="wizAssets" required style="color: var(--color-text); background-color: var(--color-input-bg);">
+                                        <option value="" disabled selected>Select assets size</option>
+                                        <option value="Under ₹50 Lakhs">Under ₹50 Lakhs</option>
+                                        <option value="₹50 Lakhs - ₹2 Crores">₹50 Lakhs - ₹2 Crores</option>
+                                        <option value="Over ₹2 Crores">Over ₹2 Crores</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="wizard-input-group">
+                                <label class="wizard-input-label">Primary Advisory Focus</label>
+                                <select class="wizard-input" id="wizGoal" required style="color: var(--color-text); background-color: var(--color-input-bg);">
+                                    <option value="" disabled selected>Select primary requirement</option>
+                                    <option value="Wealth Management">Comprehensive Wealth Management</option>
+                                    <option value="Tax Optimization">Tax Optimization & Section Harvester</option>
+                                    <option value="Retirement drawdown">Retirement Cash-Flow & Drawdown planning</option>
+                                    <option value="Estate private Trust">Private Trusts & Wills succession</option>
+                                    <option value="General Portfolio audit">Unbiased Portfolio Performance audit</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="wizard-btn-row">
+                            <button type="button" class="btn btn-secondary" onclick="goToWizardStep(1)">Back</button>
+                            <button type="button" class="btn btn-primary" onclick="goToWizardStep(3)">Next Step</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Preferred Slots -->
+                    <div class="wizard-step-panel" id="step-panel-3">
+                        <h3 class="wizard-step-title">Advisory Call Time</h3>
+                        <p class="wizard-step-desc">Select when you want our certified fiduciary planner to call you.</p>
+                        <div class="wizard-form-fields">
+                            <div class="wizard-grid-2">
+                                <div class="wizard-input-group">
+                                    <label class="wizard-input-label">Consultation Date</label>
+                                    <input type="date" class="wizard-input" id="wizDate" required>
+                                </div>
+                                <div class="wizard-input-group">
+                                    <label class="wizard-input-label">Preferred Time Slot</label>
+                                    <select class="wizard-input" id="wizSlot" required style="color: var(--color-text); background-color: var(--color-input-bg);">
+                                        <option value="" disabled selected>Select time</option>
+                                        <option value="09:00 AM - 11:00 AM">09:00 AM - 11:00 AM</option>
+                                        <option value="11:00 AM - 01:00 PM">11:00 AM - 01:00 PM</option>
+                                        <option value="02:00 PM - 04:00 PM">02:00 PM - 04:00 PM</option>
+                                        <option value="04:00 PM - 06:00 PM">04:00 PM - 06:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wizard-btn-row">
+                            <button type="button" class="btn btn-secondary" onclick="goToWizardStep(2)">Back</button>
+                            <button type="button" class="btn btn-primary" onclick="goToWizardStep(4)">Review Summary</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Booking Summary & Submit -->
+                    <div class="wizard-step-panel" id="step-panel-4">
+                        <h3 class="wizard-step-title">Review Advisory Summary</h3>
+                        <p class="wizard-step-desc">Confirm your details before generating the handshake token.</p>
+                        
+                        <div class="wizard-summary-box">
+                            <div class="wizard-summary-item">
+                                <span class="wizard-summary-label">Name:</span>
+                                <span class="wizard-summary-val" id="sumName">-</span>
+                            </div>
+                            <div class="wizard-summary-item">
+                                <span class="wizard-summary-label">Phone & Email:</span>
+                                <span class="wizard-summary-val" id="sumContact">-</span>
+                            </div>
+                            <div class="wizard-summary-item">
+                                <span class="wizard-summary-label">Status & Net Worth:</span>
+                                <span class="wizard-summary-val" id="sumAssets">-</span>
+                            </div>
+                            <div class="wizard-summary-item">
+                                <span class="wizard-summary-label">Advisory Focus:</span>
+                                <span class="wizard-summary-val" id="sumGoal">-</span>
+                            </div>
+                            <div class="wizard-summary-item">
+                                <span class="wizard-summary-label">Requested Call:</span>
+                                <span class="wizard-summary-val" id="sumTime">-</span>
+                            </div>
+                        </div>
+
+                        <div class="wizard-btn-row">
+                            <button type="button" class="btn btn-secondary" onclick="goToWizardStep(3)">Back</button>
+                            <button type="submit" class="btn btn-primary">Confirm & Register Consultation</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FAQ ACCORDION SECTION --- -->
+    <section class="faq-sec" id="faq">
+        <div class="container">
+            <div class="faq-grid">
+                <div class="faq-header">
+                    <span class="section-tag">Clarity</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p style="color: var(--color-text-muted);">Simple answers explaining our fiduciary standards and flat advisory pricing models.</p>
+                </div>
+
+                <div class="faq-accordion">
+                    <!-- Item 1 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span class="faq-question">What does NWY do?</span>
+                            <span class="faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-panel-content">
+                                NWY is a flat fee-only private financial planning firm. We do not sell mutual funds, bonds, or insurance products directly. Instead, we analyze your assets, optimize your tax structures, and design a custom compounding strategy for a transparent flat fee.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span class="faq-question">How do consultations work?</span>
+                            <span class="faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-panel-content">
+                                Once you request a callback, a certified planner hosts a 30-minute introductory call to review your current investment distribution and goals. We then provide a basic diagnostic. If we align, we enter a comprehensive quarterly or annual retainer.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span class="faq-question">Who should work with NWY?</span>
+                            <span class="faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-panel-content">
+                                Our client base includes salaried corporate executives in top tax slabs, NRIs navigating Indian residency compliance rules, medical professionals, and founders looking to secure founder liquidity or transition family companies.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span class="faq-question">Do you provide direct investment advice?</span>
+                            <span class="faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-panel-content">
+                                Yes. Through our SEBI Registered Investment Advisor associate frameworks, we structure recommendations exclusively in direct mutual funds, corporate direct bonds, Sovereign Gold Bonds (SGBs), and specific equity sets. We do not accept commission kickbacks from any product providers.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" onclick="toggleFaq(this)">
+                            <span class="faq-question">How often is my plan reviewed?</span>
+                            <span class="faq-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-panel-content">
+                                Portfolios are monitored continually. We schedule formal reviews quarterly, with rebalancing calls whenever asset distributions drift beyond set boundaries (e.g. +/-5% margin shifts). Ad-hoc reviews are conducted during major family cash transitions.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FOOTER --- -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col-info">
+                    <a href="#" class="logo" style="margin-bottom: 1rem;">
+                        <div class="logo-symbol">N</div>
+                        <span class="logo-text">NWY</span>
+                    </a>
+                    <p class="footer-desc">
+                        Fiduciary wealth management and tax-loss harvesting models for Indian families, NRI expat accounts, and founders. Zero commission spam.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social-link" aria-label="LinkedIn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Twitter">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col-links">
+                    <h4 class="footer-col-title">Services</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link-item"><a href="#services">Wealth Management</a></li>
+                        <li class="footer-link-item"><a href="#services">Investment Planning</a></li>
+                        <li class="footer-link-item"><a href="#services">Retirement Advisory</a></li>
+                        <li class="footer-link-item"><a href="#services">Tax Optimization</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-links">
+                    <h4 class="footer-col-title">Advisory</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link-item"><a href="#learning">Learning Hub</a></li>
+                        <li class="footer-link-item"><a href="#faq">Frequently Asked</a></li>
+                        <li class="footer-link-item"><a href="#about">Our Credentials</a></li>
+                        <li class="footer-link-item"><a href="#home">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-newsletter">
+                    <h4 class="footer-col-title">Join The NWY Brief</h4>
+                    <p class="footer-desc" style="margin-top: 0;">Unbiased monthly insights on direct investing and tax laws in India.</p>
+                    <form class="footer-newsletter-form" onsubmit="handleNewsletter(event)">
+                        <input type="email" class="footer-newsletter-input" id="nlEmail" placeholder="Your Email Address" required>
+                        <button type="submit" class="footer-newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-compliance">
+                    <strong>Regulatory Compliance & SEBI Disclaimers:</strong> NWY operates in association with SEBI Registered Investment Advisers. Registration granted by SEBI, membership of BASL and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors. Investment in securities market are subject to market risks. Read all the related documents carefully before investing. Fiduciary planning simulations do not constitute guaranteed returns.
+                </p>
+                <div class="footer-copyright-row">
+                    <span>© 2026 NWY Wealth Management Private Limited. All rights reserved.</span>
+                    <div class="footer-copyright-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Disclosures Brochure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- --- WHATSAPP FLOATING WIDGET --- -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/919876543210?text=Hi%20NWY%20Wealth%2C%20I'd%20like%20to%20know%20more%20about%20your%20fiduciary%20wealth%20planning." class="whatsapp-btn" target="_blank" aria-label="Chat with Advisor on WhatsApp">
+            <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.59 1.98 14.117.953 11.49.951 6.058.951 1.631 5.321 1.627 10.75c-.001 1.682.449 3.32 1.302 4.758L1.92 20.93l5.528-1.451c-.137.079-.271.161-.401.245zM17.94 15c-.326-.162-1.93-.948-2.228-1.057-.297-.108-.513-.162-.73.162-.216.324-.838 1.056-1.027 1.274-.19.216-.378.243-.705.081-.328-.162-1.38-.507-2.63-1.618-.97-.863-1.626-1.929-1.816-2.254-.19-.325-.02-.501.143-.662.147-.146.327-.379.49-.569.164-.189.218-.324.327-.54.109-.217.054-.405-.028-.568-.08-.162-.73-1.748-1-2.399-.263-.629-.53-.54-.73-.55-.188-.01-.405-.01-.622-.01s-.568.081-.865.405c-.297.324-1.135 1.108-1.135 2.703 0 1.595 1.162 3.136 1.324 3.352.162.216 2.287 3.477 5.541 4.881.774.333 1.379.532 1.85.682.778.247 1.487.213 2.047.129.625-.093 1.93-.787 2.2-1.503.271-.717.271-1.328.19-1.463-.082-.136-.297-.217-.624-.379z"/></svg>
+        </a>
+    </div>
+
+    <!-- --- MOBILE STICKY CONVERSION BAR --- -->
+    <div class="mobile-sticky-bar">
+        <a href="#booking" class="btn btn-primary mobile-sticky-btn">
+            Book Free Consultation
+        </a>
+    </div>
+
+    <!-- Script Application -->
+    <script src="app.js"></script>
+</body>
+</html>
